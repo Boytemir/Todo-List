@@ -100,4 +100,12 @@ function deleteTodo(id) {
 }
 
 
+/*=====================
+=======Move Btn active=====
+======================*/
 
+const  moveBtn = document.querySelector(".move-btn");
+
+moveBtn.addEventListener("click", () => {
+   moveBtn.classList.toggle("active")
+})
