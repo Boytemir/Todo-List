@@ -80,12 +80,20 @@ body{
    background: #fff;
    left: 0;
    top: 50%;
-   transform: translateY(50%);
 }
 
 .todosLabel.active::before{
     width: 100%;
-    transition: all 3s ease;
+   animation: anmate 0.3s ease;
+}
+
+@keyframes anmate {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
 }
 
 .list-group__item span{

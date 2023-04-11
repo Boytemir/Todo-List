@@ -1,19 +1,17 @@
 let Obj = [
    {
       text: "Learn VueJs",
-      completed: false
+      completed: false,
    },
    {
       text: "Code a todo list",
-      completed: false
+      completed: false,
    },
    {
       text: "Learn something else",
-      completed: false
+      completed: false,
    },
 ];
-
-console.log(Obj);
 
 const formCreate = document.getElementById("form__create");
 const createInput = document.getElementById("create-input");
@@ -82,7 +80,6 @@ function todoCompleted(id) {
 
    Obj = todosCompleted;
    showTodos();
-   console.log(Obj);
 }
 
 
@@ -108,4 +105,4 @@ const  moveBtn = document.querySelector(".move-btn");
 
 moveBtn.addEventListener("click", () => {
    moveBtn.classList.toggle("active")
-})
+});
